@@ -1,0 +1,412 @@
+/*
+* {box-sizing: border-box;}*/
+
+
+/*---------------heading----------------*/
+html{
+    height: 100%;
+    box-sizing: border-box;
+    position:relative;
+}
+
+
+body{
+    background-image: url("../images/criss-cross.png");
+    background-repeat: repeat;
+    min-height: 100%;
+    margin:0;
+    padding:0;
+    color: #777777;
+}
+
+p{
+    font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
+}
+
+h1{
+    font-family: 'Georgia', Times, 'Times New Roman', serif;
+}
+
+
+
+.container{
+    
+    margin-bottom: 50px;
+    padding:0;
+}
+
+
+
+.requiredSize{
+    max-width: 960px;
+
+}
+
+.smallerView{
+    visibility: hidden;
+}
+
+.navbar{
+    z-index: 900;
+    height:75px;
+    background-color: #ffffff;
+    border-bottom: 3px solid;
+    border-color: #cccccc;
+    padding-left:15px;
+    padding-right:0;
+    justify-content: space-between;
+
+}
+
+
+.my-nav-container{
+    position:relative;
+    z-index: 10;
+}
+
+
+.special-nav-item{
+    
+
+    position:absolute;
+    left: 0;
+    bottom:0;
+    background-color: #4aaaa5;
+    color:#ffffff;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top:15px;
+    padding-bottom: 15px;
+    margin-bottom: 0px;
+    
+}
+
+
+#headArea{
+    height:165px;
+    width: 100%;
+    margin-bottom: 25px;
+}
+
+#linksHead{
+    color:grey;
+    right:5px;
+    bottom: 0;
+    position:absolute;
+    
+    
+    margin-right: 15px;
+
+}
+
+.nav-link {
+    padding-right:0;
+    padding-left: 2rem;
+
+}
+
+.links {
+    display: inline-block;
+
+}
+.links:visited{
+    color:#777777;
+    text-decoration: none;
+
+}
+
+.links:link {
+    text-decoration: none;
+    color:#777777;
+}
+
+.links:hover{
+    color:rgb(36, 36, 36)
+}
+
+.portLinks:visited{
+    color:#ffffff;
+}
+
+.portLinks:link{
+    color:#ffffff;
+}
+
+.fontSpacing{
+    margin-bottom:0;
+}
+
+
+#headingArea{ 
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 5;
+
+
+    width:100%;
+    height: 150px;
+    margin-bottom: 0;
+    background-color: #ffffff;
+    border-bottom: 3px solid;
+    border-color: #cccccc;
+}
+
+#smallSpace{
+    height: 75px;
+    width: 100%;
+} 
+
+.dropdown{
+    bottom:0;
+    right:40px !important;
+}
+
+.navbar-nav .nav-link{
+    padding-left: 100px !important;
+}
+
+
+
+/*-------------content------------------*/
+.myContent{
+
+    padding-right: 15px;
+    padding-left: 15px;  
+    padding-top: 15px;
+    padding-bottom: 15px;
+    background-color: #ffffff; 
+
+}
+
+#contentHead{
+    height: 60px;
+    width:100%;
+    border-bottom: 3px #dddddd solid;
+    margin-bottom: 40px;
+    color:#4aaaa5;
+    margin-top:0;
+
+}
+
+/*-----------index------------*/
+#profilePic{
+    width:275px; 
+    height:275px;
+    float:left;
+    margin-right: 15px;
+}
+
+#aboutText p{
+
+    line-height: 2rem;
+}
+/*------------contact-----------*/
+.inputFields{
+    width:calc(100% - 4px);
+    
+}
+
+#inputFieldA{
+    width:calc(100% - 2);
+}
+
+
+
+#textAreaP{
+    margin-bottom:0;
+}
+
+textarea{
+    max-width: calc(100%);
+    min-width: calc(100%);
+    max-height: 300px;
+    min-height: 100px;
+    padding: 0;
+
+}
+
+#buttonP{
+    margin-top:0;
+    margin-bottom: 0px;
+}
+
+#buttonSub{
+
+    height: 45px;
+    width: 100px;
+    background-color: #4aaaa5;
+    color: #ffffff;
+
+}
+/*-----------portfolio------------*/
+
+.imgLinks{
+    position:relative;
+    margin-top: 50px;
+    margin-bottom:0;
+    margin-top:0;
+    margin-right: 30px;
+    display: inline-block;
+}
+
+.col-lg-4:nth-child(3n) .imgLinks{
+    margin-left: 15px;
+    margin-right: 0px;    
+}
+.col-lg-4:nth-child(3n - 1) .imgLinks{
+    margin-left: 0px;
+    margin-right: 15px; 
+}
+
+.scaleDown{
+    min-height: 275px;
+    min-width: 275px;
+}
+
+.textOverImg{
+    position: absolute;
+    top: 75%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    background-color:#4aaaa5;
+    width:100%;
+    text-align: center;  
+}
+
+
+
+
+/*--------------footer-----------------*/
+
+#footerArea{
+    height: 40px;
+}
+
+#footerTail{
+
+    border-top: 8px solid #4aaaa5;
+    height: 50px;
+    width: 100%;
+    padding-right: 0;
+    padding-left: 0;
+    background-color: #666666;
+    color: white;
+    margin-bottom:0;
+    max-width:100%;
+    
+} 
+
+
+#sticky-footer {
+    flex-shrink: none;
+    padding:0;
+    position:fixed;
+    bottom:0;
+    width: 100%;
+    
+
+  }
+  
+/*--------------------------------------------*/
+@media screen and (max-width: 991px) {
+
+.scaleDown{
+    height: 100%;
+    width: 100%;
+    }
+
+.textOverImg{
+    font-size: 2rem;
+    }
+
+.imgLinks{
+    height: 100%;
+    width: 100%;
+    margin-right:0;
+    margin-left:0;
+    }
+.col-lg-4:nth-child(3n) .imgLinks{
+    margin-left: 0px;
+    margin-right: 0px;    
+    }
+.col-lg-4:nth-child(3n - 1) .imgLinks{
+    margin-left: 0px;
+    margin-right: 0px; 
+    }
+
+}
+
+
+
+
+
+
+
+@media screen and (max-width: 767px) {
+
+    .largerView{
+        visibility: hidden;
+    }
+    .smallerView{
+        visibility: visible;
+    }
+
+    #contentHead{
+        height: 60px;
+        width:100%;
+        border-bottom: 3px #dddddd solid;
+        margin-bottom: 40px;
+        color:#4aaaa5;
+        margin-top:0;
+        text-align: center;
+    
+    }
+
+}    
+
+
+@media screen and (max-width: 600px) {
+    #profilePic{
+        width:86%; 
+        height:90%;
+        float:none;
+        margin-right: 7%;
+        margin-left: 7%;
+        margin-bottom:7%;
+
+    }
+}
+
+@media screen and (max-width: 575px) {
+    .imgLinks{
+        margin-top:0;
+    }
+    
+}
+
+@media screen and (max-width: 480px) {
+   
+    #myName{ 
+
+        font-size:30px;
+
+    }
+
+    .special-nav-item{
+        padding-left: 7px;
+        padding-right: 7px;
+        padding-top:7px;
+        padding-bottom: 7px;  
+    }
+}
+
+@media screen and (max-width: 360px) {
+
+    #myName{ 
+        font-size:23px;
+    }
+}
+
+
